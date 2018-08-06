@@ -1,0 +1,35 @@
+import os
+
+#SECRET_KEY = os.urandom(24)
+SECRET_KEY = 'adasdsad'
+
+DEBUG = True
+
+DB_USERNAME = 'root'
+DB_PASSWORD = '123456'
+DB_HOST = '127.0.0.1'
+DB_PORT = '3306'
+DB_NAME = 'bbs'
+
+DB_URI = 'mysql+pymysql://%s:%s@%s:%s/%s?charset=utf8' %\
+(DB_USERNAME,DB_PASSWORD,DB_HOST,DB_PORT,DB_NAME)
+
+SQLALCHEMY_DATABASE_URI = DB_URI
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+CMS_USER_ID = 'SDASDASD'
+FRONT_USER_ID = 'SDFASFSD234320645KSDLFD'
+
+MAIL_SERVER = "smtp.qq.com"
+MAIL_PORT = '587'
+MAIL_USE_TLS = True
+# MAIL_USE_SSL
+MAIL_USERNAME = "429141582@qq.com"
+MAIL_PASSWORD = "xuczpbpjnwimbgjd"
+MAIL_DEFAULT_SENDER = "429141582@qq.com"
+
+UEDITOR_UPLOAD_PATH = os.path.join(os.path.dirname(__file__),'images')
+UEDITOR_UPLOAD_TO_QINIU = False
+
+
+PER_PAGE = 10
